@@ -2,23 +2,23 @@
 
 ## Portfolio Composition and Market Dynamics
 
-**Diversified Stock Selection:** Randomly select 6 stocks
+**Stock Selection:** Randomly select 6 stocks
 
-**Gold as a Stability Anchor:** Gold (GLD) is included as an asset known for its stability and potential to hedge against market volatility and inflation. Using GOLD ETF.
+**Gold as a Stability Anchor:** known for its stability and potential to hedge against market volatility and inflation. The code is using GOLD ETF.
 
-**VIX as the Volatility Barometer:** The VIX index is a real-time market risk and investor sentiment indicator, where higher values generally signal increased market stress or uncertainty.
+**VIX as the Volatility Barometer:**  measures the expected volatility of the S&P 500 index over the next 30 days
 
 <img width="1125" alt="Screenshot 2024-03-17 at 4 26 53 PM" src="https://github.com/seanhung07/Gold-Volatility-Index-Strategy/assets/35648173/62433c6e-a1e6-4524-bc7b-c18d6c75249a">
 
 ## The GLD-VIX Indicator
 
-**Normalized Value Difference:** The indicator computes the difference between the normalized values of GLD and VIX. Normalization helps level the playing field between assets operating on different scales.
+**Normalized Value Difference:** The indicator computes the difference between the normalized values of GLD and VIX.
 
-**Indicator Interpretation:** A positive indicator value (when GLD outperforms the average more than VIX does) signals a potential flight to safety or risk aversion in the market. It suggests that it might be an opportune time to take a long position in the portfolio, presuming that the market may face downward pressure, and stocks in the portfolio may be undervalued or soon to rebound.
+**Indicator Interpretation:** A positive indicator value (when GLD outperforms the average more than VIX does) signals a potential flight to safety or risk aversion in the market. This suggests that now may be the best time to take a long position in my portfolio, assuming the market may face downward pressure and the stocks in my portfolio may be undervalued or rebound soon.
 
 ## Trading Signals and Strategy Execution
 
-**Signals for Trading:** The strategy uses a simple rule to generate trading signals — 'long' (1) when the indicator is positive, and 'hold' (0) when negative or neutral. This rule aims to capitalize on market corrections or rebounds and is easy to follow, reducing complexity in decision-making.
+**Signals for Trading:** The strategy uses a simple rule to generate trading signals — 'long' (1) when the indicator is positive, and 'hold' (0) when negative or neutral. This rule aims to capitalize on market corrections or rebounds and is easy to follow.
 
 **Return Calculation:** The daily portfolio returns are adjusted based on these signals.
 
